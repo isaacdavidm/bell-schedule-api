@@ -1,0 +1,519 @@
+{
+  "school_info": {
+    "name": "Barcelona High School",
+    "academic_year": "2026-2027",
+    "schedule_type": "regular"
+  },
+
+  "schedule_config": {
+    "weekdays_only": true
+  },
+
+  "schedule": {
+    "name": "Regular Day",
+    "periods": [1, 2, 3, 4],
+    "period_times": {
+      "1": {"start": "09:05", "end": "10:15"},
+      "passing_period_1": {"start": "10:15", "end": "10:20"},
+      "homeroom": {"start": "10:20", "end": "10:35"},
+      "passing_period_2": {"start": "10:35", "end": "10:40"},
+      "2": {"start": "10:40", "end": "11:50"},
+      "lunch": {"start": "11:50", "end": "12:40"},
+      "3": {"start": "12:40", "end": "13:50"},
+      "passing_period_3": {"start": "13:50", "end": "13:55"},
+      "4": {"start": "13:55", "end": "15:05"}
+    }
+  },
+  
+  "holidays": [
+    {
+      "date": "2026-09-11",
+      "name": "La Diada",
+      "type": "federal_holiday"
+    },
+    {
+      "date": "2026-09-24",
+      "name": "La Mercè",
+      "type": "federal_holiday"
+    },
+    {
+      "date": "2026-10-12",
+      "name": "La Hispanidad",
+      "type": "federal_holiday"
+    },
+    {
+      "date": "2026-11-05",
+      "name": "Parent Teacher Conferences",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2026-11-06",
+      "name": "Parent Teacher Conferences",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2026-11-26",
+      "name": "Thanksgiving Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2026-11-27",
+      "name": "Thanksgiving Break",
+      "type": "school_holiday"
+    },
+     {
+      "date": "2026-12-07",
+      "name": "La Immaculada",
+      "type": "federal_holiday"
+    },
+    {
+      "date": "2026-12-08",
+      "name": "La Immaculada",
+      "type": "federal_holiday"
+    },
+    {
+      "date": "2026-12-21",
+      "name": "Winter Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2026-12-22",
+      "name": "Winter Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2026-12-23",
+      "name": "Winter Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2026-12-24",
+      "name": "Winter Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2026-12-25",
+      "name": "Winter Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2026-12-28",
+      "name": "Winter Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2026-12-29",
+      "name": "Winter Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2026-12-30",
+      "name": "Winter Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2026-12-31",
+      "name": "Winter Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-01-01",
+      "name": "Winter Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-01-04",
+      "name": "Winter Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-01-05",
+      "name": "Winter Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-01-06",
+      "name": "Winter Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-01-28",
+      "name": "Makeup Exams",
+      "type": "school_holiday"
+    },
+     {
+      "date": "2027-01-29",
+      "name": "Makeup Exams",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-02-09",
+      "name": "No School",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-02-22",
+      "name": "Ski Week",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-02-23",
+      "name": "Ski Week",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-02-24",
+      "name": "Ski Week",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-02-25",
+      "name": "Ski Week",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-02-26",
+      "name": "Ski Week",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-03-01",
+      "name": "No School",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-03-18",
+      "name": "Spring Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-03-19",
+      "name": "Spring Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-03-20",
+      "name": "Spring Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-03-21",
+      "name": "Spring Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-03-22",
+      "name": "Spring Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-03-23",
+      "name": "Spring Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-03-24",
+      "name": "Spring Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-03-25",
+      "name": "Spring Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-03-26",
+      "name": "Spring Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-03-27",
+      "name": "Spring Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-03-28",
+      "name": "Spring Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-03-29",
+      "name": "Spring Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-03-30",
+      "name": "Spring Break",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-04-15",
+      "name": "Parent Teacher Conferences",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-04-16",
+      "name": "Parent Teacher Conferences",
+      "type": "school_holiday"
+    },
+    {
+      "date": "2027-05-17",
+      "name": "Pentecost",
+      "type": "federal_holiday"
+    }
+  ],
+  
+  "special_schedules": [
+    {
+      "date": "2025-12-19",
+      "name": "Half Day",
+      "type": "early_dismissal",
+      "schedule_override": {
+        "periods": [1, 2, 3, 4, 5, 6],
+        "period_times": {
+          "homeroom": {"start": "09:15", "end": "09:25"},
+          "passing_period_1": {"start": "09:25", "end": "09:30"},
+          "1": {"start": "09:30", "end": "09:56"},
+          "passing_period_2": {"start": "09:56", "end": "10:01"},
+          "2": {"start": "10:01", "end": "10:27"},
+          "passing_period_3": {"start": "10:27", "end": "10:32"},
+          "3": {"start": "10:32", "end": "10:58"},
+          "passing_period_4": {"start": "10:58", "end": "11:03"},
+          "4": {"start": "11:03", "end": "11:29"},
+          "passing_period_5": {"start": "11:29", "end": "11:34"},
+          "5": {"start": "11:34", "end": "12:00"},
+          "passing_period_6": {"start": "12:00", "end": "12:05"},
+          "6": {"start": "12:05", "end": "12:30"}
+        }
+      }
+    },
+    {
+      "date": "2025-10-31",
+      "name": "Half Day - Halloween Party",
+      "type": "early_dismissal",
+      "schedule_override": {
+        "periods": [1, 2, 3],
+        "period_times": {
+          "homeroom": {"start": "09:15", "end": "09:30"},
+          "passing_period_1": {"start": "09:30", "end": "09:40"},
+          "1": {"start": "09:40", "end": "10:20"},
+          "passing_period_2": {"start": "10:20", "end": "10:30"},
+          "2": {"start": "10:30", "end": "11:10"},
+          "passing_period_3": {"start": "11:10", "end": "11:20"},
+          "3": {"start": "11:20", "end": "12:00"},
+          "lunch": {"start": "12:00", "end": "12:30"},
+          "party": {"start": "12:30", "end": "14:45"}
+        }
+      }
+    },
+    {
+      "date": "2025-11-21",
+      "name": "Extended Homeroom",
+      "type": "extended_homeroom",
+      "schedule_override": {
+        "periods": [4, 5, 6],
+        "period_times": {
+          "homeroom": {"start": "09:15", "end": "10:15"},
+          "passing_period_1": {"start": "10:15", "end": "10:25"},
+          "4": {"start": "10:25", "end": "11:30"},
+          "passing_period_2": {"start": "11:30", "end": "11:40"},
+          "5": {"start": "11:40", "end": "12:45"},
+          "lunch": {"start": "12:45", "end": "13:40"},
+          "6": {"start": "13:40", "end": "14:45"}
+        }
+      }
+    },
+    {
+      "date": "2025-12-11",
+      "name": "Palo Alto Christmas Market",
+      "type": "early_dismissal",
+      "schedule_override": {
+        "periods": [1, 2, 3],
+        "period_times": {
+          "homeroom": {"start": "09:15", "end": "09:30"},
+          "passing_period_1": {"start": "09:30", "end": "09:40"},
+          "1": {"start": "09:40", "end": "10:20"},
+          "passing_period_2": {"start": "10:20", "end": "10:30"},
+          "2": {"start": "10:30", "end": "11:10"},
+          "passing_period_3": {"start": "11:10", "end": "11:20"},
+          "3": {"start": "11:20", "end": "12:00"},
+          "lunch": {"start": "12:00", "end": "12:30"},
+          "market": {"start": "12:30", "end": "14:45"}
+        }
+      }
+    },
+    {
+      "date": "2025-12-03",
+      "name": "Concert",
+      "type": "early_dismissal",
+      "schedule_override": {
+        "periods": [4, 5, 6],
+        "period_times": {
+          "homeroom": {"start": "09:15", "end": "09:30"},
+          "passing_period_1": {"start": "09:30", "end": "09:35"},
+          "4": {"start": "09:35", "end": "10:45"},
+          "passing_period_2": {"start": "10:45", "end": "10:50"},
+          "5": {"start": "10:50", "end": "12:00"},
+          "lunch": {"start": "12:00", "end": "12:35"},
+          "6": {"start": "12:35", "end": "13:45"},
+          "concert": {"start": "13:45", "end": "14:45"}
+        }
+      }
+    },
+    {
+      "date": "2026-01-26",
+      "name": "Exam Week",
+      "type": "exam_schedule",
+      "schedule_override": {
+        "periods": [1, 2],
+        "period_times": {
+          "1": {"start": "09:30", "end": "11:30"},
+          "lunch": {"start": "11:30", "end": "12:30"},
+          "2": {"start": "12:30", "end": "14:30"}
+        }
+      }
+    },
+    {
+      "date": "2026-01-27",
+      "name": "Exam Week",
+      "type": "exam_schedule",
+      "schedule_override": {
+        "periods": [3, 4],
+        "period_times": {
+          "3": {"start": "09:30", "end": "11:30"},
+          "lunch": {"start": "11:30", "end": "12:30"},
+          "4": {"start": "12:30", "end": "14:30"}
+        }
+      }
+    },
+    {
+      "date": "2026-01-28",
+      "name": "Exam Week",
+      "type": "exam_schedule",
+      "schedule_override": {
+        "periods": [5, 6],
+        "period_times": {
+          "5": {"start": "09:30", "end": "11:30"},
+          "lunch": {"start": "11:30", "end": "12:30"},
+          "6": {"start": "12:30", "end": "14:30"}
+        }
+      }
+    },
+    {
+      "date": "2026-01-29",
+      "name": "PROFESSIONAL DEVELOPMENT SESSION",
+      "type": "professional_devlopment",
+      "schedule_override": {
+        "periods": [1, 2, 3, 4, 5],
+        "period_times": {
+          "1": {"start": "09:40", "end": "10:15"},
+          "passing_period_1": {"start": "10:15", "end": "10:20"},
+          "2": {"start": "10:20", "end": "10:55"},
+          "passing_period_2": {"start": "10:55", "end": "11:00"},
+          "3": {"start": "11:00", "end": "11:35"},
+          "passing_period_3": {"start": "11:35", "end": "11:40"},
+          "4": {"start": "11:40", "end": "12:15"},
+          "passing_period_4": {"start": "12:15", "end": "12:20"},
+          "5": {"start": "12:20", "end": "13:00"},
+          "lunch": {"start": "13:00", "end": "14:00"},
+          "debrief": {"start": "14:00", "end": "15:30"}
+        }
+      }
+    },
+    {
+      "date": "2026-02-16",
+      "name": "(A Day) Carnival - Prehistory Mode",
+      "type": "school_event",
+      "schedule_override": {
+        "periods": [1, 2, 3],
+        "period_times": {
+          "homeroom": {"start": "09:15", "end": "09:30"},
+          "passing_period_1": {"start": "09:30", "end": "09:40"},
+          "1": {"start": "09:40", "end": "11:00"},
+          "passing_period_2": {"start": "11:00", "end": "11:10"},
+          "2": {"start": "11:10", "end": "12:30"},
+          "lunch": {"start": "12:30", "end": "13:25"},
+          "3": {"start": "13:25", "end": "14:45"}
+        }
+      }
+    },
+    {
+      "date": "2026-02-17",
+      "name": "(B Day) Carnival - Ancient Civilization",
+      "type": "school_event",
+      "schedule_override": {
+        "periods": [4, 5, 6],
+        "period_times": {
+          "homeroom": {"start": "09:15", "end": "09:30"},
+          "passing_period_1": {"start": "09:30", "end": "09:40"},
+          "4": {"start": "09:40", "end": "11:00"},
+          "passing_period_2": {"start": "11:00", "end": "11:10"},
+          "5": {"start": "11:10", "end": "12:30"},
+          "lunch": {"start": "12:30", "end": "13:25"},
+          "6": {"start": "13:25", "end": "14:45"}
+        }
+      }
+    },
+    {
+      "date": "2026-02-18",
+      "name": "(A Day) Carnival - Renaissance Remix",
+      "type": "school_event",
+      "schedule_override": {
+        "periods": [1, 2, 3],
+        "period_times": {
+          "homeroom": {"start": "09:15", "end": "09:30"},
+          "passing_period_1": {"start": "09:30", "end": "09:40"},
+          "1": {"start": "09:40", "end": "11:00"},
+          "passing_period_2": {"start": "11:00", "end": "11:10"},
+          "2": {"start": "11:10", "end": "12:30"},
+          "lunch": {"start": "12:30", "end": "13:25"},
+          "3": {"start": "13:25", "end": "14:45"}
+        }
+      }
+    },
+    {
+      "date": "2026-02-19",
+      "name": "(B Day) Carnival - Retro Rewind",
+      "type": "school_event",
+      "schedule_override": {
+        "periods": [4, 5, 6],
+        "period_times": {
+          "homeroom": {"start": "09:15", "end": "09:30"},
+          "passing_period_1": {"start": "09:30", "end": "09:40"},
+          "4": {"start": "09:40", "end": "11:00"},
+          "passing_period_2": {"start": "11:00", "end": "11:10"},
+          "5": {"start": "11:10", "end": "12:30"},
+          "lunch": {"start": "12:30", "end": "13:25"},
+          "6": {"start": "13:25", "end": "14:45"}
+        }
+      }
+    },
+    {
+      "date": "2026-02-20",
+      "name": "(A Day) Carnival - Future Takeover",
+      "type": "school_event",
+      "schedule_override": {
+        "periods": [1, 2, 3],
+        "period_times": {
+          "homeroom": {"start": "09:15", "end": "09:30"},
+          "passing_period_1": {"start": "09:30", "end": "09:40"},
+          "1": {"start": "09:40", "end": "11:00"},
+          "passing_period_2": {"start": "11:00", "end": "11:10"},
+          "2": {"start": "11:10", "end": "12:30"},
+          "lunch": {"start": "12:30", "end": "13:25"},
+          "3": {"start": "13:25", "end": "14:45"}
+        }
+      }
+    }
+  ],
+  
+  "weekend_days": ["saturday", "sunday"],
+  
+  "messages": {
+    "no_school": "No school today!",
+    "holiday_prefix": "Holiday: ",
+    "current_period_prefix": "Current Period: ",
+    "next_period_prefix": "Next Period: ",
+    "school_ended": "School day has ended!"
+  }
+}
