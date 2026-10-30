@@ -9,7 +9,7 @@ Schedule logic adapted from [BHS Bell](https://bhsbell.com), a bell schedule sit
 ## Quick start
 
 ```bash
-git clone https://github.com/<your-username>/bell-schedule-api.git
+git clone https://github.com/mcnoobington-es/bell-schedule-api.git
 cd bell-schedule-api
 npm install
 npm start
