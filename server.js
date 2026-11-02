@@ -1,0 +1,34 @@
+const express = require('express');
+const scheduleData = require('./scheduleData.json');
+const { getCurrentStatus } = require('./lib/schedule-logic');
+const { getMadridNow, isValidDate, isValidTime } = require('./lib/time');
+
+const app = express();
+
+// Matches YYYY-MM-DDTHH:MM, e.g. 2025-10-30T10:15
+const AT_PATTERN = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/;
+
+app.get('/api/current-period', (req, res) => {
+    let dateString, timeString;
+
+    if (req.query.at){
+        if (!AT_PATTERN.test(req.query.at)){
+            return res.status(400).json({ error: 'Invalid "at" parameter. Use YYYY-MM-DDTHH:MM, e.g. 2025-10-30T10:15' });
+        }
+        [dateString, timeString] = req.query.at.split('T');
+
+        if (!isValidDate(dateString) || !isValidTime(timeString)){
+            return res.status(400).json({ error: `"${req.query.at}" is not a real date and time` });
+        }
+    } else {
+        ({ dateString, timeString } = getMadridNow(new Date()));
+    }
+
+    const currentStatus = getCurrentStatus(scheduleData, dateString, timeString);
+
+    return res.json(currentStatus);
+});
+
+app.listen(3000, () => {
+  console.log('Server running at http://localhost:3000');
+});
