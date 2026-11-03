@@ -18,7 +18,7 @@ app.get('/api/current-period', (req, res) => {
         [dateString, timeString] = req.query.at.split('T');
 
         if (!isValidDate(dateString) || !isValidTime(timeString)){
-            return res.status(400).json({ error: `"${req.query.at}" is not a real date and time` });
+            return res.status(400).json({ error: `"${req.query.at}" is not a real date and time. Use YYYY-MM-DDTHH:MM, e.g. 2025-10-30T10:15` });
         }
     } else {
         ({ dateString, timeString } = getMadridNow(new Date()));
