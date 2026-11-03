@@ -1,6 +1,6 @@
 const express = require('express');
 const scheduleData = require('./scheduleData.json');
-const { getCurrentStatus, getNextSchoolDayInfo } = require('./lib/schedule-logic');
+const { getPeriodStatus, getNextSchoolDayInfo } = require('./lib/schedule-logic');
 const { getMadridNow, isValidDate, isValidTime } = require('./lib/time');
 
 const app = express();
@@ -9,7 +9,7 @@ const app = express();
 const AT_PATTERN = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/;
 const DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
 
-app.get('/api/current-period', (req, res) => {
+app.get('/api/period', (req, res) => {
     let dateString, timeString;
 
     if (req.query.at){
@@ -25,9 +25,9 @@ app.get('/api/current-period', (req, res) => {
         ({ dateString, timeString } = getMadridNow(new Date()));
     }
 
-    const currentStatus = getCurrentStatus(scheduleData, dateString, timeString);
+    const periodStatus = getPeriodStatus(scheduleData, dateString, timeString);
 
-    return res.json(currentStatus);
+    return res.json(periodStatus);
 });
 
 app.get('/api/next-school-day', (req, res) => {
