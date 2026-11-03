@@ -265,7 +265,7 @@
   
   "special_schedules": [
     {
-      "date": "2025-12-19",
+      "date": "2026-12-19",
       "name": "Half Day",
       "type": "early_dismissal",
       "schedule_override": {
@@ -288,7 +288,7 @@
       }
     },
     {
-      "date": "2025-10-31",
+      "date": "2026-10-30",
       "name": "Half Day - Halloween Party",
       "type": "early_dismissal",
       "schedule_override": {
@@ -307,7 +307,7 @@
       }
     },
     {
-      "date": "2025-11-21",
+      "date": "2026-11-21",
       "name": "Extended Homeroom",
       "type": "extended_homeroom",
       "schedule_override": {
@@ -324,7 +324,7 @@
       }
     },
     {
-      "date": "2025-12-11",
+      "date": "2026-12-11",
       "name": "Palo Alto Christmas Market",
       "type": "early_dismissal",
       "schedule_override": {
@@ -343,7 +343,7 @@
       }
     },
     {
-      "date": "2025-12-03",
+      "date": "2026-12-03",
       "name": "Concert",
       "type": "early_dismissal",
       "schedule_override": {
@@ -361,7 +361,7 @@
       }
     },
     {
-      "date": "2026-01-26",
+      "date": "20267-01-26",
       "name": "Exam Week",
       "type": "exam_schedule",
       "schedule_override": {
@@ -374,7 +374,7 @@
       }
     },
     {
-      "date": "2026-01-27",
+      "date": "2027-01-27",
       "name": "Exam Week",
       "type": "exam_schedule",
       "schedule_override": {
@@ -387,7 +387,7 @@
       }
     },
     {
-      "date": "2026-01-28",
+      "date": "2027-01-28",
       "name": "Exam Week",
       "type": "exam_schedule",
       "schedule_override": {
@@ -400,7 +400,7 @@
       }
     },
     {
-      "date": "2026-01-29",
+      "date": "2027-01-29",
       "name": "PROFESSIONAL DEVELOPMENT SESSION",
       "type": "professional_devlopment",
       "schedule_override": {
@@ -421,7 +421,7 @@
       }
     },
     {
-      "date": "2026-02-16",
+      "date": "2027-02-16",
       "name": "(A Day) Carnival - Prehistory Mode",
       "type": "school_event",
       "schedule_override": {
@@ -438,7 +438,7 @@
       }
     },
     {
-      "date": "2026-02-17",
+      "date": "2027-02-17",
       "name": "(B Day) Carnival - Ancient Civilization",
       "type": "school_event",
       "schedule_override": {
@@ -455,7 +455,7 @@
       }
     },
     {
-      "date": "2026-02-18",
+      "date": "2027-02-18",
       "name": "(A Day) Carnival - Renaissance Remix",
       "type": "school_event",
       "schedule_override": {
@@ -472,7 +472,7 @@
       }
     },
     {
-      "date": "2026-02-19",
+      "date": "2027-02-19",
       "name": "(B Day) Carnival - Retro Rewind",
       "type": "school_event",
       "schedule_override": {
@@ -489,7 +489,7 @@
       }
     },
     {
-      "date": "2026-02-20",
+      "date": "2027-02-20",
       "name": "(A Day) Carnival - Future Takeover",
       "type": "school_event",
       "schedule_override": {
