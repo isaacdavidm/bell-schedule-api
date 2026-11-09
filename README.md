@@ -23,6 +23,7 @@ The server runs at `http://localhost:3000`.
 |--------|------|-------------|
 | GET | `/api/period` | The period (or break) at a moment, and what's next. Defaults to now. |
 | GET | `/api/next-school-day` | The next day with school, skipping weekends and holidays. Defaults to after today. |
+| GET | `/api/next-holiday` | The next holiday or break, with its start, end, and the day school resumes. Defaults to after today. |
 
 All times are Madrid local time (`Europe/Madrid`).
 
@@ -132,6 +133,35 @@ curl "localhost:3000/api/next-school-day?date=2026-11-04"
 
 Here, Nov 5–6 are holidays and Nov 7–8 are a weekend, so the next school day is Monday, 5 days away.
 
+### `GET /api/next-holiday`
+
+| Query parameter | Format | Default |
+|-----------------|--------|---------|
+| `date` (optional) | `YYYY-MM-DD` | the current Madrid date |
+
+Returns the first holiday or break that **starts after** `date`.
+
+```bash
+curl "localhost:3000/api/next-holiday?date=2026-12-10"
+```
+
+```json
+{
+  "name": "Winter Break",
+  "type": "school_holiday",
+  "start_date": "2026-12-21",
+  "start_day": "Monday",
+  "end_date": "2027-01-06",
+  "end_day": "Wednesday",
+  "school_days_off": 13,
+  "is_tomorrow": false,
+  "days_until": 11,
+  "back_to_school": "2027-01-07"
+}
+```
+
+`scheduleData.json` lists holidays one date at a time. Entries with the same name that are only separated by weekends are merged into one break, so Winter Break comes back as a single result instead of 13. `school_days_off` counts weekdays only. If `date` falls inside a break, you get the *next* one, not the break you're already in.
+
 ## Errors
 
 Errors return JSON with an `error` message.
@@ -143,6 +173,7 @@ Errors return JSON with an `error` message.
 | 400 | `date` isn't in `YYYY-MM-DD` format | `{ "error": "Invalid \"date\" parameter. Use YYYY-MM-DD, e.g. 2025-10-30" }` |
 | 400 | `date` has the right format but isn't a real date (`2026-02-30`) | `{ "error": "\"2026-02-30\" is not a real date. Use YYYY-MM-DD, e.g. 2025-10-30" }` |
 | 404 | `/api/next-school-day` finds no school day in the next 90 days | `{ "error": "Next school day not found." }` |
+| 404 | `/api/next-holiday` finds no holiday after `date` in `scheduleData.json` | `{ "error": "No upcoming holiday found." }` |
 
 A path that doesn't exist gets Express's default 404 page, which is HTML, not JSON.
 
@@ -164,7 +195,7 @@ A path that doesn't exist gets Express's default 404 page, which is HTML, not JS
 ```
 ├── server.js              # Express routes and input validation
 ├── lib/
-│   ├── schedule-logic.js  # Periods, holidays, special schedules, next school day
+│   ├── schedule-logic.js  # Periods, holidays, special schedules, next school day, next holiday
 │   └── time.js            # Madrid time, day of week, date maths, date/time validation
 ├── scheduleData.json      # School calendar and period times
 └── package.json
