@@ -1,6 +1,6 @@
 const express = require('express');
 const scheduleData = require('./scheduleData.json');
-const { getPeriodStatus, getNextSchoolDayInfo } = require('./lib/schedule-logic');
+const { getPeriodStatus, getNextSchoolDayInfo, getNextHolidayInfo } = require('./lib/schedule-logic');
 const { getMadridNow, isValidDate, isValidTime } = require('./lib/time');
 
 const app = express();
@@ -48,6 +48,26 @@ app.get('/api/next-school-day', (req, res) => {
     const nextSchoolDay = getNextSchoolDayInfo(scheduleData, dateString);
 
     return nextSchoolDay ? res.json(nextSchoolDay) : res.status(404).json({error: 'Next school day not found.'});
+});
+
+app.get('/api/next-holiday', (req, res) => {
+    let dateString;
+
+    if (req.query.date){
+        if (!DATE_PATTERN.test(req.query.date)){
+            return res.status(400).json({ error: 'Invalid "date" parameter. Use YYYY-MM-DD, e.g. 2025-10-30' });
+        }
+        if (!isValidDate(req.query.date)){
+            return res.status(400).json({ error: `"${req.query.date}" is not a real date. Use YYYY-MM-DD, e.g. 2025-10-30` });
+        }
+        dateString = req.query.date;
+    } else {
+        ({ dateString } = getMadridNow(new Date()));
+    }
+
+    const nextHoliday = getNextHolidayInfo(scheduleData, dateString);
+
+    return nextHoliday ? res.json(nextHoliday) : res.status(404).json({ error: 'No upcoming holiday found.' });
 });
 
 app.listen(3000, () => {
